@@ -16,6 +16,24 @@ const features = [
   },
 ];
 
+const steps = [
+  {
+    title: "Connect your inventory",
+    description:
+      "Import existing stock data or start fresh — every warehouse and store syncs to one place.",
+  },
+  {
+    title: "Set your thresholds",
+    description:
+      "Define reorder points once and let the system watch stock levels for you.",
+  },
+  {
+    title: "Stay ahead of stockouts",
+    description:
+      "Get alerted the moment something runs low, with reports ready whenever you need them.",
+  },
+];
+
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col bg-zinc-50 font-sans dark:bg-black">
@@ -61,6 +79,30 @@ export default function Home() {
               </p>
             </div>
           ))}
+        </section>
+
+        <section
+          id="how-it-works"
+          className="flex w-full flex-col items-center gap-10 border-t border-black/[.08] px-6 py-20 dark:border-white/[.145]"
+        >
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            How it works
+          </h2>
+          <div className="grid w-full max-w-5xl grid-cols-1 gap-8 sm:grid-cols-3">
+            {steps.map((step, index) => (
+              <div key={step.title} className="flex flex-col gap-2">
+                <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                  Step {index + 1}
+                </span>
+                <h3 className="text-lg font-semibold text-black dark:text-zinc-50">
+                  {step.title}
+                </h3>
+                <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
+                  {step.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section
