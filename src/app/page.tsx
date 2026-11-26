@@ -1,18 +1,18 @@
 const features = [
   {
-    title: "Fast by default",
+    title: "Real-time stock tracking",
     description:
-      "Built on the App Router with server components, so pages load quickly without extra setup.",
+      "See quantities, locations, and movements update live across every warehouse and store.",
   },
   {
-    title: "Simple to extend",
+    title: "Low-stock alerts",
     description:
-      "A clean starting point you can build on as new pages and features are added.",
+      "Get notified automatically before items run out, so you can reorder with confidence.",
   },
   {
-    title: "Ready to ship",
+    title: "Reporting built in",
     description:
-      "Styled with Tailwind CSS and ready to deploy as soon as the content is in place.",
+      "Turn stock levels and order history into clear reports without exporting to a spreadsheet.",
   },
 ];
 
@@ -25,11 +25,11 @@ export default function Home() {
             Landingpage v0.1
           </span>
           <h1 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
-            Welcome to kautrykaucuba
+            Inventory management, without the spreadsheets
           </h1>
           <p className="max-w-xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            A straightforward landing page to introduce what we&apos;re building
-            and invite people to get in touch.
+            Track stock, manage orders, and keep every warehouse in sync from
+            one simple dashboard.
           </p>
           <div className="mt-2 flex flex-col gap-4 text-base font-medium sm:flex-row">
             <a
@@ -68,10 +68,10 @@ export default function Home() {
           className="flex w-full flex-col items-center gap-4 border-t border-black/[.08] px-6 py-20 text-center dark:border-white/[.145]"
         >
           <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
-            Want to know more?
+            Want to see it in action?
           </h2>
           <p className="max-w-md text-base leading-7 text-zinc-600 dark:text-zinc-400">
-            Reach out and we&apos;ll get back to you.
+            Reach out for a walkthrough of the inventory management system.
           </p>
           <a
             className="flex h-12 items-center justify-center rounded-full bg-foreground px-6 text-base font-medium text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc]"

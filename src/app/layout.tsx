@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "kautrykaucuba",
-  description: "Landingpage v0.1 for kautrykaucuba",
+  title: "kautrykaucuba — Inventory Management",
+  description:
+    "Landingpage v0.1 for kautrykaucuba's inventory management system",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
